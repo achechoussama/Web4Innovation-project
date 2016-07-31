@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>title</title>
+    <title>masters' web site</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="./resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,7 +51,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">Projects</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
@@ -87,7 +87,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>Projects</h2>
                     <hr class="star-primary">
                 </div>
             </div>
