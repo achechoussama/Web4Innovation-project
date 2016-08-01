@@ -12,7 +12,7 @@ class DbCon
 	private function __construct()
 	{
 
-		$dsn = 'mysql:dbname=web4innovationDay5;host=127.0.0.1';
+		$dsn = 'mysql:dbname=web4i;host=127.0.0.1';
 		$user = 'root';
 		$password = 'root';
 
@@ -37,5 +37,14 @@ class DbCon
 
 
 	}
+
+	/**************** NEW METHOD*****************/
+
+	public static function close(){
+
+		self::$dbh = null;
+	}
+
+	/**************** END NEW METHOD*****************/
 
 }
