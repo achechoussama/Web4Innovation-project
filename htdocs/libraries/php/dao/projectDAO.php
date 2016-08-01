@@ -13,6 +13,7 @@ VALUES ('$title', '$description', $budget,'$deadline', '$status', '$document',$a
   Db::close();
 }
 public static function getProjects(){
+  DB::open();
   $sql = "SELECT * FROM t_project;";
   $result = Db::getRowList($sql);
   Db::close();

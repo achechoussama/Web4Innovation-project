@@ -9,12 +9,16 @@ abstract class Request{
     $ret = $_GET[$key];
     return $ret;
   }
-  
+
   /*
   return the demanded controller
   */
   public static function getController(){
     return self::getParameter("ctl");
   }
+  public static function getAction(){
+    return self::getParameter("act");
+  }
+
 }
  ?>
