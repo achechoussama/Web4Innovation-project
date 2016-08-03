@@ -119,4 +119,55 @@ CREATE TABLE `t_studiant`
   `surname_studiant`   varchar(40)                                  NOT NULL,
   `email`              varchar(40)                                  NOT NULL,
   `school`              varchar(40)                                  NOT NULL       check in ("ENSI","ESPRIT","ENISO")
- ); 
+ );
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_task`
+--
+
+
+CREATE TABLE `t_task`
+(
+  `id_task`        INTEGER        AUTO_INCREMENT            PRIMARY key ,
+  `name_task`      varchar(40)                                  Not NULL,
+  `description`   varchar(40)                                  NOT NULL,
+  `start_date`            DATETIME                                  NOT NULL,
+  `end_date`              DATETIME                                  NOT NULL       check in ("ENSI","ESPRIT","ENISO")
+ `comments`			 VARCHAR(255),
+ `hour_number`		NUMBER							NOT NULL,
+ `project_id`		NUMBER				,
+ FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`)
+
+ );
+
+- --------------------------------------------------------
+
+--
+-- Table structure for table `t_team`
+--
+ 
+
+
+
+
+
+- --------------------------------------------------------
+
+--
+-- Table structure for table `t_task`
+--
+
+CREATE TABLE `affectation`
+(
+ `affectation_id`	NUMBER 		AUTO_INCREMENT		PRIMARY KEY,
+ `studiant_id`		NUMBER,
+ `project_id`       NUMBER,
+ FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`),
+ FOREIGN KEY (`studiant_id`) REFERENCES `t_studiant`(`id_studiant`),
+
+);
+
+
