@@ -1,820 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<meta name="description" content="Creative One Page Parallax Template">
-	<meta name="keywords" content="Creative, Onepage, Parallax, HTML5, Bootstrap, Popular, custom, personal, portfolio" /> 
-	<meta name="author" content=""> 
-	<title>Master - 3la 3ajla</title> 
-	<link href="resources/css/bootstrap.min.css" rel="stylesheet">
-	<link href="resources/css/prettyPhoto.css" rel="stylesheet"> 
-	<link href="resources/css/font-awesome.min.css" rel="stylesheet"> 
-	<link href="resources/css/animate.css" rel="stylesheet"> 
-	<link href="resources/css/main.css" rel="stylesheet">
-	<link href="resources/css/responsive.css" rel="stylesheet"> 
-	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
-	<script src="js/respond.min.js"></script> <![endif]--> 
-	<link rel="shortcut icon" href="resources/images/ico/favicon.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/images/ico/apple-touch-icon-144-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/images/ico/apple-touch-icon-114-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/images/ico/apple-touch-icon-72-precomposed.png"> 
-	<link rel="apple-touch-icon-precomposed" href="resources/images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
-<body>
-	<div class="preloader">
-		<div class="preloder-wrap">
-			<div class="preloder-inner"> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div> 
-				<div class="ball"></div>
-			</div>
-		</div>
-	</div><!--/.preloader-->
-	<header id="navigation"> 
-		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
-			<div class="container"> 
-				<div class="navbar-header"> 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
-					</button> 
-					<a class="navbar-brand" href="index.html"><h1><img src="resources/images/logo.png" alt="logo"></h1></a> 
-				</div> 
-				<div class="collapse navbar-collapse"> 
-					<ul class="nav navbar-nav navbar-right"> 
-						<li class="scroll active"><a href="#navigation">Home</a></li> 
-						<li class="scroll"><a href="#about-us">About Us</a></li> 
-						<li class="scroll"><a href="#services">Services</a></li> 
-						<li class="scroll"><a href="#our-team">Our Team</a></li> 
-						<li class="scroll"><a href="#portfolio">Portfolio</a></li> 
-						<li class="scroll"><a href="#clients">Clients</a></li> 
-						<li class="scroll"><a href="#blog">Blog</a></li> 
-						<li class="scroll"><a href="#contact">Contact</a></li> 
-					</ul> 
-				</div> 
-			</div> 
-		</div><!--/navbar--> 
-	</header> <!--/#navigation--> 
 
-	<section id="home">
-		<div class="home-pattern"></div>
-		<div id="main-carousel" class="carousel slide" data-ride="carousel"> 
-			<ol class="carousel-indicators">
-				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#main-carousel" data-slide-to="1"></li>
-				<li data-target="#main-carousel" data-slide-to="2"></li>
-			</ol><!--/.carousel-indicators--> 
-			<div class="carousel-inner">
-				<div class="item active" style="background-image: url(resources/images/slider/slide3.jpg)"> 
-					<div class="carousel-caption"> 
-						<div> 
-							<h2 class="heading animated bounceInDown">'Himu' Onepage HTML Template</h2> 
-							<p class="animated bounceInUp">Fully Professional one page template</p> 
-							<a class="btn btn-default slider-btn animated fadeIn" href="#">Get Started</a> 
-						</div> 
-					</div> 
-				</div>
-				<div class="item" style="background-image: url(resources/images/slider/slide2.jpg)"> 
-					<div class="carousel-caption"> <div> 
-						<h2 class="heading animated bounceInDown">Get All in Onepage</h2> 
-						<p class="animated bounceInUp">Everything is outstanding </p> <a class="btn btn-default slider-btn animated fadeIn" href="#">Get Started</a> 
-					</div> 
-				</div> 
-			</div> 
-			<div class="item" style="background-image: url(resources/images/slider/slide1.jpg)"> 
-				<div class="carousel-caption"> 
-					<div> 
-						<h2 class="heading animated bounceInRight">Fully Responsive Template</h2> 
-						<p class="animated bounceInLeft">100% Responsive HTML template</p> 
-						<a class="btn btn-default slider-btn animated bounceInUp" href="#">Get Started</a> 
-					</div> 
-				</div> 
-			</div>
-		</div><!--/.carousel-inner-->
+<head>
 
-		<a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-		<a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
-	</div> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-</section><!--/#home-->
+    <title>association</title>
 
-<section id="about-us">
-	<div class="container">
-		<div class="text-center">
-			<div class="col-sm-8 col-sm-offset-2">
-				<h2 class="title-one">Why With Us?</h2>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-			</div>
-		</div>
-		<div class="about-us">
-			<div class="row">
-				<div class="col-sm-6">
-					<h3>Why with us?</h3>
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-chain-broken"></i> About</a></li>
-						<li><a href="#mission" data-toggle="tab"><i class="fa fa-th-large"></i> Mission</a></li>
-						<li><a href="#community" data-toggle="tab"><i class="fa fa-users"></i> Community</a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="tab-pane fade in active" id="about">
-							<div class="media">
-								<img class="pull-left media-object" src="resources/images/about-us/about.jpg" alt="about us"> 
-								<div class="media-body">
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="mission">
-							<div class="media">
-								<img class="pull-left media-object" src="resources/images/about-us/mission.jpg" alt="Mission"> 
-								<div class="media-body">
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </p>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="community">
-							<div class="media">
-								<img class="pull-left media-object" src="resources/images/about-us/community.jpg" alt="Community"> 
-								<div class="media-body">
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<h3>Our Skills</h3>
-					<div class="skill-bar">
-						<div class="skillbar clearfix " data-percent="90%">
-							<div class="skillbar-title">
-								<span>HTML5 &amp; CSS3</span>
-							</div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">90%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix" data-percent="85%">
-							<div class="skillbar-title"><span>UI Design</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">85%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="70%">
-							<div class="skillbar-title"><span>jQuery</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">70%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="60%">
-							<div class="skillbar-title"><span>PHP</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">60%</div>
-						</div> <!-- End Skill Bar -->
-						<div class="skillbar clearfix " data-percent="75%">
-							<div class="skillbar-title"><span>Wordpress</span></div>
-							<div class="skillbar-bar"></div>
-							<div class="skill-bar-percent">75%</div>
-						</div> <!-- End Skill Bar --></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section><!--/#about-us-->
+    <!-- Bootstrap Core CSS -->
+    <link href="./resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<section id="services" class="parallax-section">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-sm-8 col-sm-offset-2">
-					<h2 class="title-one">Services</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="our-service">
-						<div class="services row">
-							<div class="col-sm-4">
-								<div class="single-service">
-									<i class="fa fa-th"></i>
-									<h2>Modern Design</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="single-service">
-									<i class="fa fa-html5"></i>
-									<h2>Web Development</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="single-service">
-									<i class="fa fa-users"></i>
-									<h2>Online Marketing</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-								</div>
-							</div></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/#service-->
+    <!-- Theme CSS -->
+    <link href="./resources/css/freelancer.min.css" rel="stylesheet">
 
-		<section id="our-team">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-sm-8 col-sm-offset-2">
-						<h2 class="title-one">Meet The Team</h2>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
-					</div>
-				</div>
-				<div id="team-carousel" class="carousel slide" data-interval="false">
-					<a class="member-left" href="#team-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-					<a class="member-right" href="#team-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-					<div class="carousel-inner team-members">
-						<div class="row item active">
-							<div class="col-sm-6 col-md-3">
-								<div class="single-member">
-									<img src="resources/images/our-team/member1.jpg" alt="team member" />
-									<h4>William Hurt</h4>
-									<h5>Sr. Web Developer</h5>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-									<div class="socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="single-member">
-									<img src="resources/images/our-team/member2.jpg" alt="team member" />
-									<h4>Alekjandra Jony</h4>
-									<h5>Creative Designer</h5>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-									<div class="socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="single-member">
-									<img src="resources/images/our-team/member3.jpg" alt="team member" />
-									<h4>Paul Johnson</h4>
-									<h5>Skilled Programmer</h5>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-									<div class="socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="single-member">
-									<img src="resources/images/our-team/member4.jpg" alt="team member" />
-									<h4>John Richerds</h4>
-									<h5>Marketing Officer</h5>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-									<div class="socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row item">
-							<div class="col-sm-6 col-md-3">
-								<div class="single-member">
-									<img src="resources/images/our-team/member1.jpg" alt="team member" />
-									<h4>William Hurt</h4>
-									<h5>Sr. Web Developer</h5>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-									<div class="socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="single-member">
-									<img src="resources/images/our-team/member3.jpg" alt="team member" />
-									<h4>Paul Johnson</h4>
-									<h5>Skilled Programmer</h5>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-									<div class="socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="single-member">
-									<img src="resources/images/our-team/member2.jpg" alt="team member" />
-									<h4>Alekjandra Jony</h4>
-									<h5>Creative Designer</h5>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-									<div class="socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<div class="single-member">
-									<img src="resources/images/our-team/member4.jpg" alt="team member" />
-									<h4>John Richerds</h4>
-									<h5>Marketing Officer</h5>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-									<div class="socials">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/#Our-Team-->
+    <!-- Custom Fonts -->
+    <link href="./resources/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-		<section id="portfolio">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-sm-8 col-sm-offset-2">
-						<h2 class="title-one">Portfolio</h2>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
-					</div>
-				</div>
-				<ul class="portfolio-filter text-center">
-					<li><a class="btn btn-default active" href="#" data-filter="*">All</a></li>
-					<li><a class="btn btn-default" href="#" data-filter=".html">Html</a></li>
-					<li><a class="btn btn-default" href="#" data-filter=".wordpress">Wordpress</a></li>
-					<li><a class="btn btn-default" href="#" data-filter=".joomla">Joomla</a></li>
-					<li><a class="btn btn-default" href="#" data-filter=".megento">Megento</a></li>
-				</ul><!--/#portfolio-filter-->
-				<div class="portfolio-items">
-					<div class="col-sm-3 col-xs-12 portfolio-item html">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="resources/images/portfolio/1.jpg" alt=""></div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-12 portfolio-item jooma">
-							<div class="view efffect" >
-								<div class="portfolio-image">
-									<img src="resources/images/portfolio/2.jpg" alt="">
-								</div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="resources/images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
-							<div class="view efffect">
-								<div class="portfolio-image">
-									<img src="resources/images/portfolio/3.jpg" alt="">
-								</div> 
-								<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 portfolio-item megento">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="resources/images/portfolio/4.jpg" alt="">
-							</div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 portfolio-item html">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="resources/images/portfolio/5.jpg" alt="">
-							</div> <div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
-					<div class="view efffect">
-						<div class="portfolio-image">
-							<img src="resources/images/portfolio/6.jpg" alt="">
-						</div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 portfolio-item html">
-					<div class="view efffect">
-						<div class="portfolio-image">
-							<img src="resources/images/portfolio/7.jpg" alt="">
-						</div> 
-						<div class="mask text-center">
-							<h3>Novel</h3>
-							<h4>Lorem ipsum dolor sit amet consectetur</h4>
-							<a href="#"><i class="fa fa-link"></i></a>
-							<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-12 portfolio-item joomla">
-					<div class="view efffect">
-						<div class="portfolio-image">
-							<img src="resources/images/portfolio/8.jpg" alt=""></div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 portfolio-item html">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="resources/images/portfolio/9.jpg" alt="">
-							</div> 
-							<div class="mask text-center">
-								<h3>Novel</h3>
-								<h4>Lorem ipsum dolor sit amet consectetur</h4>
-								<a href="#"><i class="fa fa-link"></i></a>
-								<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 col-xs-12 portfolio-item wordpress">
-						<div class="view efffect">
-							<div class="portfolio-image">
-								<img src="resources/images/portfolio/10.jpg" alt=""></div> 
-								<div class="mask text-center">
-									<h3>Novel</h3>
-									<h4>Lorem ipsum dolor sit amet consectetur</h4>
-									<a href="#"><i class="fa fa-link"></i></a>
-									<a href="resources/images/portfolio/big-item.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3 col-xs-12 portfolio-item joomla">
-							<div class="view efffect">
-								<div class="portfolio-image">
-									<img src="resources/images/portfolio/11.jpg" alt=""></div> 
-									<div class="mask text-center">
-										<h3>Novel</h3>
-										<h4>Lorem ipsum dolor sit amet consectetur</h4>
-										<a href="#"><i class="fa fa-link"></i></a>
-										<a href="resources/images/portfolio/big-item3.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 col-xs-12 portfolio-item megento">
-								<div class="view efffect">
-									<div class="portfolio-image">
-										<img src="resources/images/portfolio/12.jpg" alt=""></div> 
-										<div class="mask text-center">
-											<h3>Novel</h3>
-											<h4>Lorem ipsum dolor sit amet consectetur</h4>
-											<a href="#"><i class="fa fa-link"></i></a>
-											<a href="resources/images/portfolio/big-item4.jpg" data-gallery="prettyPhoto"><i class="fa fa-search-plus"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-					</section> <!--/#portfolio-->
+</head>
 
-					<section id="clients" class="parallax-section">
-						<div class="container">
-							<div class="clients-wrapper">
-								<div class="row text-center">
-									<div class="col-sm-8 col-sm-offset-2">
-										<h2 class="title-one">Clients Say About Us</h2>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-									</div>
-								</div>
-								<div id="clients-carousel" class="carousel slide" data-ride="carousel"> <!-- Indicators -->
-									<ol class="carousel-indicators">
-										<li data-target="#clients-carousel" data-slide-to="0" class="active"></li>
-										<li data-target="#clients-carousel" data-slide-to="1"></li>
-										<li data-target="#clients-carousel" data-slide-to="2"></li>
-									</ol> <!-- Wrapper for slides -->
-									<div class="carousel-inner">
-										<div class="item active">
-											<div class="single-client">
-												<div class="media">
-													<img class="pull-left" src="resources/images/clients/client1.jpg" alt="">
-													<div class="media-body">
-														<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="single-client">
-												<div class="media">
-													<img class="pull-left" src="resources/images/clients/client3.jpg" alt="">
-													<div class="media-body">
-														<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="single-client">
-												<div class="media">
-													<img class="pull-left" src="resources/images/clients/client2.jpg" alt="">
-													<div class="media-body">
-														<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section><!--/#clients-->
+<body id="page-top" class="index">
 
-					<section id="blog"> 
-						<div class="container">
-							<div class="row text-center clearfix">
-								<div class="col-sm-8 col-sm-offset-2">
-									<h2 class="title-one">Our Blog</h2>
-									<p class="blog-heading">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-								</div>
-							</div> 
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="single-blog">
-										<img src="resources/images/blog/1.jpg" alt="" />
-										<h2>Lorem ipsum dolor sit amet</h2>
-										<ul class="post-meta">
-											<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> John</li>
-											<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
-										</ul>
-										<div class="blog-content">
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-										</div>
-										<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-detail">Read More</a>
-									</div>
-									<div class="modal fade" id="blog-detail" tabindex="-1" role="dialog" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-body">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<img src="resources/images/blog/3.jpg" alt="" />
-													<h2>Lorem ipsum dolor sit amet</h2>
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-												</div> 
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="single-blog">
-										<img src="resources/images/blog/2.jpg" alt="" />
-										<h2>Lorem ipsum dolor sit amet</h2>
-										<ul class="post-meta">
-											<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> John</li>
-											<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
-										</ul>
-										<div class="blog-content">
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-										</div>
-										<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-two">Read More</a>
-									</div>
-									<div class="modal fade" id="blog-two" tabindex="-1" role="dialog" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-body">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<img src="resources/images/blog/2.jpg" alt="" />
-													<h2>Lorem ipsum dolor sit amet</h2>
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="single-blog">
-										<img src="resources/images/blog/3.jpg" alt="" />
-										<h2>Lorem ipsum dolor sit amet</h2>
-										<ul class="post-meta">
-											<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> John</li>
-											<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
-										</ul>
-										<div class="blog-content">
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-										</div>
-										<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-three">Read More</a>
-									</div>
-									<div class="modal fade" id="blog-three" tabindex="-1" role="dialog" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content">
-												<div class="modal-body">
-													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<img src="resources/images/blog/3.jpg" alt="" />
-													<h2>Lorem ipsum dolor sit amet</h2>
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-												</div> 
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="single-blog">
-										<img src="resources/images/blog/3.jpg" alt="" />
-										<h2>Lorem ipsum dolor sit amet</h2>
-										<ul class="post-meta">
-											<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> John</li>
-											<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
-										</ul>
-										<div class="blog-content">
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-										</div>
-										<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-four">Read More</a></div>
-										<div class="modal fade" id="blog-four" tabindex="-1" role="dialog" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-body">
-														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-														<img src="resources/images/blog/3.jpg" alt="" />
-														<h2>Lorem ipsum dolor sit amet</h2>
-														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-													</div> 
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-blog">
-											<img src="resources/images/blog/2.jpg" alt="" />
-											<h2>Lorem ipsum dolor sit amet</h2>
-											<ul class="post-meta">
-												<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> John</li>
-												<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
-											</ul>
-											<div class="blog-content">
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-											</div>
-											<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-six">Read More</a>
-										</div>
-										<div class="modal fade" id="blog-six" tabindex="-1" role="dialog" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-body">
-														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-														<img src="resources/images/blog/2.jpg" alt="" />
-														<h2>Lorem ipsum dolor sit amet</h2>
-														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-													</div> 
-												</div>
-											</div>
-										</div>
-									</div>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Masters's home</a>
+            </div>
 
-									<div class="col-sm-4">
-										<div class="single-blog">
-											<img src="resources/images/blog/1.jpg" alt="" />
-											<h2>Lorem ipsum dolor sit amet</h2>
-											<ul class="post-meta">
-												<li><i class="fa fa-pencil-square-o"></i><strong> Posted By:</strong> John</li>
-												<li><i class="fa fa-clock-o"></i><strong> Posted On:</strong> Apr 15 2014</li>
-											</ul>
-											<div class="blog-content">
-												<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-											</div>
-											<a href="" class="btn btn-primary" data-toggle="modal" data-target="#blog-seven">Read More</a>
-										</div>
-										<div class="modal fade" id="blog-seven" tabindex="-1" role="dialog" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-body">
-														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-														<img src="resources/images/blog/1.jpg" alt="" />
-														<h2>Lorem ipsum dolor sit amet</h2>
-														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-													</div> 
-												</div>
-											</div>
-										</div>
-									</div> 
-								</div> 
-							</div> 
-						</section> <!--/#blog-->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Projects</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Add Project</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-						<section id="contact">
-							<div class="container">
-								<div class="row text-center clearfix">
-									<div class="col-sm-8 col-sm-offset-2">
-										<div class="contact-heading">
-											<h2 class="title-one">Contact With Us</h2>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="container">
-								<div class="contact-details">
-									<div class="pattern"></div>
-									<div class="row text-center clearfix">
-										<div class="col-sm-6">
-											<div class="contact-address"><address><p><span>Devs</span>Cluster</p><strong>36 North Kafrul<br>Dhaka Cantonment Area<br> Dhaka-1206, Bangladesh</strong><br><small>( Lorem ipsum dolor sit amet, consectetuer adipiscing elit )</small></address>
-												<div class="social-icons">
-													<a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a>
-													<a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-dribbble"></i></a>
-													<a href="#"><i class="fa fa-linkedin"></i></a>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6"> 
-											<div id="contact-form-section">
-												<div class="status alert alert-success" style="display: none"></div>
-												<form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
-													<div class="form-group">
-														<input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name"></div>
-														<div class="form-group">
-															<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
-														</div> 
-														<div class="form-group">
-															<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
-														</div> 
-														<div class="form-group">
-															<button type="submit" class="btn btn-primary">Send</button>
-														</div>
-													</form> 
-												</div>
-											</div>
-										</div>
-									</div>
-								</div> 
-							</section> <!--/#contact--> 
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="./resources/img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Welcome Company</span>
+                        <hr class="star-light">
+                        <span class="skills">Your satisfaction is our top priority</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-	<footer id="footer"> 
-		<div class="container"> 
-			<div class="text-center"> 
-				<p>Copyright &copy; 2014 - <a href="http://mostafiz.me/">Mostafiz</a> | All Rights Reserved</p> 
-			</div> 
-		</div> 
-	</footer> <!--/#footer--> 
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="./resources/img/portfolio/cabin.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="./resources/img/portfolio/cake.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="./resources/img/portfolio/circus.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="./resources/img/portfolio/game.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="./resources/img/portfolio/safe.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="./resources/img/portfolio/submarine.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<script type="text/javascript" src="libraries/js/jquery.js"></script> 
-	<script type="text/javascript" src="libraries/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="libraries/js/smoothscroll.js"></script> 
-	<script type="text/javascript" src="libraries/js/jquery.isotope.min.js"></script>
-	<script type="text/javascript" src="libraries/js/jquery.prettyPhoto.js"></script> 
-	<script type="text/javascript" src="libraries/js/jquery.parallax.js"></script> 
-	<script type="text/javascript" src="libraries/js/main.js"></script> 
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>New Project</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <p>Click here to add a new project</p>
+              </div>
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="http://test.dev/index.php?ctl=project" class="btn btn-lg btn-outline">
+                        <i class="fa fa-file"></i> New Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place
+                            <br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="./resources/img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="./resources/img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="./resources/img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="./resources/img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="./resources/img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="./resources/img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./resources/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="./libraries/js/jqBootstrapValidation.js"></script>
+    <script src="./libraries/js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="./libraries/js/freelancer.min.js"></script>
+
 </body>
+
 </html>
