@@ -32,9 +32,7 @@ CREATE TABLE `t_assoc_sw`
 `name`              VARCHAR(50)                               NOT NULL,
 `description`       VARCHAR(255),
 `logo`              VARCHAR(50),
-`website`           VARCHAR(50),
-`login_id`          INTEGER,
-FOREIGN KEY (login_id) REFERENCES t_login(id)
+`website`           VARCHAR(50)
 );
 
 
@@ -54,10 +52,10 @@ INSERT INTO `t_assoc_sw` (`id`, `name`, `description`, `logo`, `website`) VALUES
 CREATE TABLE `t_project`
 (
 `id_project`           INTEGER           AUTO_INCREMENT           PRIMARY KEY ,
-`name`                 VARCHAR(50),
-`description`          VARCHAR(255),
-`budget`               NUMBER,
-`deadline`             DATETIME,
+`name`                 VARCHAR(50) 							      NOT NULL,
+`description`          VARCHAR(255)     						  NOT NULL,
+`budget`               NUMBER, 									
+`deadline`             DATETIME									
 `status`               VARCHAR(50),
 `document`             VARCHAR(50),
 `assoc_sw_id`          int,
@@ -98,11 +96,12 @@ FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`)
 
 
 
-CREATE TABLE `t_login`
+CREATE TABLE `user`
 (
 `id`                INTEGER         AUTO_INCREMENT        Primary key ,
-user_name           VARCHAR(50),
-pwd                 VARCHAR(50),
+`type`           VARCHAR(50)		NOT NULL 			check in ("assoc_sw","student"),
+`login`			varchar(40)			NOT NULL,
+`pwd`                 VARCHAR(50)	NOT NULL	
 );
 
 -- --------------------------------------------------------
@@ -112,11 +111,11 @@ pwd                 VARCHAR(50),
 --
 
 
-CREATE TABLE `t_studiant`
+CREATE TABLE `t_student`
 (
-  `id_studiant`        INTEGER        AUTO_INCREMENT            PRIMARY key ,
-  `name_studiant`      varchar(40)                                  Not NULL,
-  `surname_studiant`   varchar(40)                                  NOT NULL,
+  `id_student`        INTEGER        AUTO_INCREMENT            PRIMARY key ,
+  `name_student`      varchar(40)                                  Not NULL,
+  `surname_student`   varchar(40)                                  NOT NULL,
   `email`              varchar(40)                                  NOT NULL,
   `school`              varchar(40)                                  NOT NULL       check in ("ENSI","ESPRIT","ENISO")
  );
@@ -131,14 +130,17 @@ CREATE TABLE `t_studiant`
 
 CREATE TABLE `t_task`
 (
-  `id_task`        INTEGER        AUTO_INCREMENT            PRIMARY key ,
-  `name_task`      varchar(40)                                  Not NULL,
-  `description`   varchar(40)                                  NOT NULL,
-  `start_date`            DATETIME                                  NOT NULL,
-  `end_date`              DATETIME                                  NOT NULL       check in ("ENSI","ESPRIT","ENISO")
- `comments`			 VARCHAR(255),
- `hour_number`		NUMBER							NOT NULL,
- `project_id`		NUMBER				,
+  `id_task`        				INTEGER        AUTO_INCREMENT           	 	PRIMARY key ,
+  `name_task`      				varchar(40)                                  	Not NULL,
+  `description`   				varchar(40)                                  	NOT NULL,
+  `start_date`            		DATETIME										NOT NULL,
+  `end_date`            		DATETIME                                        NOT NULL,      
+ `comments`			 			VARCHAR(255),
+ `hour_number`					NUMBER											NOT NULL,
+ `project_id`					NUMBER,
+ 
+
+
  FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`)
 
  );
@@ -163,11 +165,16 @@ CREATE TABLE `t_task`
 CREATE TABLE `affectation`
 (
  `affectation_id`	NUMBER 		AUTO_INCREMENT		PRIMARY KEY,
- `studiant_id`		NUMBER,
+ `student_id`		NUMBER,
  `project_id`       NUMBER,
+
+
+
+
  FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`),
- FOREIGN KEY (`studiant_id`) REFERENCES `t_studiant`(`id_studiant`),
+ FOREIGN KEY (`student_id`) REFERENCES `t_student`(`id_student`)
 
 );
 
 
+.

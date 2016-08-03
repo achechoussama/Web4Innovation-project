@@ -1,5 +1,5 @@
 <?php
-include_once("./models/assoc_sw.php");
+include_once('./models/assoc_sw.php');
 /* test of functionnalities
 function sortByStatus(wantedStatus){
   $sortedList;
@@ -34,6 +34,6 @@ $count ++;
   echo " project  ID = " . $project->id . ' / Name = '.$project->name . ' <br/>' . $project->description . ' <br/>';
   */
   $projectDAO = new ProjectDAO();
-  $projectDAO->insertProject('title','description', 50,'deadline', 'status', 'document',1,'2005-10-30 T 10:45');
-  include_once("./views/assoc_sw/assoc_sw.php");
+ // $projectDAO->insertProject('title','description', 50,'deadline', 'status', 'document',1,'2005-10-30 T 10:45');
+  include_once('./views/assoc_sw/assoc_sw.php');
  ?>
