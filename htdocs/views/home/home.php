@@ -251,7 +251,7 @@
 			<div class="row text-center">
 				<div class="col-sm-8 col-sm-offset-2">
 					<h2 class="title-one">Services</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>Endowed with the seeds of greatness, turning plans into reality is our passion. For that reason we are putting between your hands our expertise, building a bridge of knowledge, excellence and skills that take you to your goal. Through our several services we make your programs happen, we make them SPECIAL.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -262,21 +262,28 @@
 								<div class="single-service">
 									<i class="fa fa-th"></i>
 									<h2>Modern Design</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+									<p>Design matters, it is one of the most important basics to ensure PERFECTION. As MASTERS we gather a group of multi skilled, talented designers who use the latest and most efficient technologies to make your IDEA... a FACT.</p>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="single-service">
 									<i class="fa fa-html5"></i>
 									<h2>Web Development</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+									<p>Enabling website's functionality is what web development is. Through the "daily birth" of New technologies we keep improving our services better and better and We count on our developers to realize your web project as good as never. </p>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="single-service">
 									<i class="fa fa-users"></i>
 									<h2>Online Marketing</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+									<p>Through setting powerful tools and methodologies for promoting products and services through the Internet. 
+Our Online marketing service includes a wider range of marketing elements available on the Internet that can deliver several benefits such as:
+Growth in potential
+Reduced expenses
+Elegant communications
+Better control
+Improved customer service
+Competitive advantage.</p>
 								</div>
 							</div></div>
 						</div>
@@ -336,7 +343,7 @@
 	<footer id="footer">
 		<div class="container">
 			<div class="text-center">
-				<p>Copyright © 2014 - <a href="http://mostafiz.me/">Mostafiz</a> | All Rights Reserved</p>
+				<p>Copyright © 2016 - <a href="http://mostafiz.me/">Mostafiz</a> | All Rights Reserved</p>
 			</div>
 		</div>
 	</footer> <!--/#footer-->
