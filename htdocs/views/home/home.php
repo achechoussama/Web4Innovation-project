@@ -251,7 +251,8 @@ Communication pole: OmarBoujdaria and Omar Chabchoub
 			<div class="row text-center">
 				<div class="col-sm-8 col-sm-offset-2">
 					<h2 class="title-one">Services</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>Endowed with the seeds of greatness,turning plans into reality is our passion. for that reason we are putting between your hands our expertise,building a bridge of knowledge,excellence and skills that takes you to your goal.
+Through our several services we make your programs happen,we make them SPECIAL.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -262,14 +263,17 @@ Communication pole: OmarBoujdaria and Omar Chabchoub
 								<div class="single-service">
 									<i class="fa fa-th"></i>
 									<h2>Modern Design</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+									<p>Design matters , it is one of the most important basics to ensure PERFECTION.
+As MASTERS we gather a group of multi skilled ,talented and perfectionistsdesigners who use the latest and most efficient technologies to make your IDEA ... a FACT.</p>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="single-service">
 									<i class="fa fa-html5"></i>
 									<h2>Web Development</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+									<p>Enablig webSites functionality is what web develpoment is.
+									 Through the "daily birth" of New technologies we keep improving our services better and betterand
+We count on our developpers to realise your web project as better as never. </p>
 								</div>
 							</div>
 							<div class="col-sm-4">
@@ -336,7 +340,7 @@ Communication pole: OmarBoujdaria and Omar Chabchoub
 	<footer id="footer">
 		<div class="container">
 			<div class="text-center">
-				<p>Copyright © 2014 - <a href="http://mostafiz.me/">Mostafiz</a> | All Rights Reserved</p>
+				<p>Copyright © 2016 - <a href="http://mostafiz.me/">Mostafiz</a> | All Rights Reserved</p>
 			</div>
 		</div>
 	</footer> <!--/#footer-->
