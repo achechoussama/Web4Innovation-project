@@ -1,22 +1,67 @@
+
+
 <?php
 include_once('Db.class.php');
-class ProjectDAO
+class signIn_DAO
 {
 
-public static function insertProject($assoc_sw_id = 0,$title = 0,$budget = 0,$document = 0,$description = 0,$status = 0,$deadline,$submission_date){
-Db::open();
-  $sql = "INSERT INTO t_project (name,description,budget,deadline,status,document,assoc_sw_id,submission_date)
+public function get_user_login($login)
+{
+    $sql = "SELECT * FROM `user` WHERE login = :login LIMIT 1";
+    $query = $this->db->prepare($sql);
+    $parameters = array(':login' => $login);
+    try
+    {
+        $query->execute($parameters);
+    } 
+    catch (PDOException $e) 
+    {
+        return NULL;
+    }
 
-VALUES ('$title', '$description', $budget,'$deadline', '$status', '$document',$assoc_sw_id,'$submission_date');";
-//VALUES ('title', 'description',50,'2015-11-24 10:24:24', 'status','document',1);";// hard coded database example
-
-  $id=Db::insertQuery($sql);
-  Db::close();
+    return $query->fetch();
 }
 
-public static function getAllProjects(){
+public static function verify_login_password($login,$pwd)
+{
+  Db::open();
+  $sql = "SELECT COUNT(id_user) as amount_of_users FROM user WHERE login = :login AND password = :password";
+  $query = $this->db->prepare($sql);
+  $parameters = array(':login' => $login, ':password' => $pwd);
+  $query->execute($parameters);
+  Db::close();
+  if($query->fetch()->amount_of_users == 1)
+        return true;
+   return false;
+}
+
+public static function getProjects(){
   Db::open();
   $sql = "SELECT * FROM t_project;";
+  $result = Db::getRowList($sql);
+  Db::close();
+return $result;
+}
+
+public static function geDoneProjects(){
+  Db::open();
+  $sql = "SELECT * FROM t_project WHERE status='done';";
+  $result = Db::getRowList($sql);
+  Db::close();
+return $result;
+}
+
+public static function getOnProgressProjects(){
+  Db::open();
+  $sql = "SELECT * FROM t_project WHERE status='onProgress';";
+  $result = Db::getRowList($sql);
+  Db::close();
+return $result;
+}
+
+public static function getNotAssignedProjects(){
+  Db::open();
+  $sql = "SELECT * FROM t_project WHERE status='notAssigned';";
   $result = Db::getRowList($sql);
   Db::close();
 return $result;
@@ -59,7 +104,7 @@ public static function updateDocument($oldDocument = 0, $newDocument = 0){
   $sql ="UPDATE `t_project` SET `document`='$newDocument' WHERE `document`= '$oldDocument' ;";
   Db::updateQuery($sql);
   Db::close();
-}
+} 
 
 }
 

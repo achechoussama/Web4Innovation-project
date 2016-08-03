@@ -35,5 +35,5 @@ $count ++;
   */
   $projectDAO = new ProjectDAO();
   $projectDAO->insertProject('title','description', 50,'deadline', 'status', 'document',1,'2005-10-30 T 10:45');
-//include_once("./views/assoc_sw/assoc_sw.php");
+  include_once("./views/assoc_sw/assoc_sw.php");
  ?>
