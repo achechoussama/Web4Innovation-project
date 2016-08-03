@@ -26,13 +26,17 @@ SET time_zone = "+00:00";
 -- Table structure for table `t_assoc_sw`
 --
 
-CREATE TABLE `t_assoc_sw` (
-  `id` int(11) NOT NULL,
-  `name` varchar(250) NOT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `logo` varchar(255) DEFAULT NULL,
-  `website` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `t_assoc_sw`
+(
+`id_assoc_sw`       INTEGER       AUTO_INCREMENT          PRIMARY KEY ,
+`name`              VARCHAR(50)                               NOT NULL,
+`description`       VARCHAR(255),
+`logo`              VARCHAR(50),
+`website`           VARCHAR(50),
+`login_id`          INTEGER,
+FOREIGN KEY (login_id) REFERENCES t_login(id)
+);
+
 
 --
 -- Dumping data for table `t_assoc_sw`
@@ -47,16 +51,19 @@ INSERT INTO `t_assoc_sw` (`id`, `name`, `description`, `logo`, `website`) VALUES
 -- Table structure for table `t_project`
 --
 
-CREATE TABLE `t_project` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `budget` int(11) NOT NULL,
-  `deadline` datetime DEFAULT NULL,
-  `status` varchar(50) NOT NULL,
-  `document` varchar(50) NOT NULL,
-  `assoc_sw_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `t_project`
+(
+`id_project`           INTEGER           AUTO_INCREMENT           PRIMARY KEY ,
+`name`                 VARCHAR(50),
+`description`          VARCHAR(255),
+`budget`               NUMBER,
+`deadline`             DATETIME,
+`status`               VARCHAR(50),
+`document`             VARCHAR(50),
+`assoc_sw_id`          int,
+
+FOREIGN KEY (`assoc_sw_id`) REFERENCES `t_assoc_sw`(`id_assoc_sw`)
+);
 
 --
 -- Dumping data for table `t_project`
@@ -72,71 +79,44 @@ INSERT INTO `t_project` (`id`, `name`, `description`, `budget`, `deadline`, `sta
 -- Table structure for table `t_submission`
 --
 
-CREATE TABLE `t_submission` (
-  `id` int(11) NOT NULL,
-  `bid` double DEFAULT NULL,
-  `project_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `t_submission`
+(
+`id_submission`         INTEGER     AUTO_INCREMENT      PRIMARY KEY ,
+`bid`                   NUMBER ,
+`project_id`            int ,
+`submission_date`      DATETIME,
+
+FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`)
+);
+
+-- --------------------------------------------------------
 
 --
--- Indexes for dumped tables
+-- Table structure for table `t_login`
 --
 
---
--- Indexes for table `t_assoc_sw`
---
-ALTER TABLE `t_assoc_sw`
-  ADD PRIMARY KEY (`id`);
+
+
+
+CREATE TABLE `t_login`
+(
+`id`                INTEGER         AUTO_INCREMENT        Primary key ,
+user_name           VARCHAR(50),
+pwd                 VARCHAR(50),
+);
+
+-- --------------------------------------------------------
 
 --
--- Indexes for table `t_project`
---
-ALTER TABLE `t_project`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_assoc` (`assoc_sw_id`);
-
---
--- Indexes for table `t_submission`
---
-ALTER TABLE `t_submission`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_project` (`project_id`);
-
---
--- AUTO_INCREMENT for dumped tables
+-- Table structure for table `t_studiant`
 --
 
---
--- AUTO_INCREMENT for table `t_assoc_sw`
---
-ALTER TABLE `t_assoc_sw`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `t_project`
---
-ALTER TABLE `t_project`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
---
--- AUTO_INCREMENT for table `t_submission`
---
-ALTER TABLE `t_submission`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- Constraints for dumped tables
---
 
---
--- Constraints for table `t_project`
---
-ALTER TABLE `t_project`
-  ADD CONSTRAINT `t_project_ibfk_1` FOREIGN KEY (`assoc_sw_id`) REFERENCES `t_assoc_sw` (`id`);
-
---
--- Constraints for table `t_submission`
---
-ALTER TABLE `t_submission`
-  ADD CONSTRAINT `t_submission_ibfk_1` FOREIGN KEY (`project_id`) REFERENCES `t_project` (`id`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE `t_studiant`
+(
+  `id_studiant`        INTEGER        AUTO_INCREMENT            PRIMARY key ,
+  `name_studiant`      varchar(40)                                  Not NULL,
+  `surname_studiant`   varchar(40)                                  NOT NULL,
+  `email`              varchar(40)                                  NOT NULL,
+  `school`              varchar(40)                                  NOT NULL       check in ("ENSI","ESPRIT","ENISO")
+ ); 
