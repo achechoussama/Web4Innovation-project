@@ -208,7 +208,7 @@
 					<div class="tab-content">
 						<div class="tab-pane fade" id="about">
 							<div class="media">
-								<img class="pull-left media-object" src="resources/images/about-us/tunesLogo.jpg" alt="about us">
+								<img class="pull-left media-object" src="resources/images/about-us/Tunes_logo.png" alt="about us">
 								<div class="media-body">
 									<p>
 The Association of University Tunisians in Switzerland (TUNES) is a young association, founded in May 2011, officially recognized by the Ecole Polytechnique Fédérale de Lausanne (EPFL), to non-political, non-religious and non-profit.</p>
@@ -219,7 +219,7 @@ The Association of University Tunisians in Switzerland (TUNES) is a young associ
 							<div class="media">
 								<img class="pull-left media-object" src="resources/images/about-us/mission.jpg" alt="Mission">
 								<div class="media-body">
-									<p>Our association, which draws its grip in dexterity, competence and motivation of its young members from the high Swiss university's primary mission is to supervise the Tunisian students in Switzerland and to facilitate their integration into student life. We are also promoting the image of Tunisia and its development a major concern and a subject of labor and continuous mobilization.Within TUNES, we firmly believe that all Tunisians, whatever their origin, place of living and social membership is entitled to a dignified and respectable life where housing, food and access to education and that to information is a guaranteed minimum. Our association does not miss an event or cultural event, to shine the image of Tunisia, to ensure the promotion of its tourism and raise funds for the poorest regions. </p>
+									<p>Our association, which draws its grip in dexterity, competence and motivation of its young members from the high Swiss university's primary mission is to supervise the Tunisian students in Switzerland and to facilitate their integration into student life. We are also promoting the image of Tunisia and its development a major concern and a subject of labor and continuous mobilization. Our association does not miss an event or cultural event, to shine the image of Tunisia, to ensure the promotion of its tourism and raise funds for the poorest regions. </p>
 								</div>
 							</div>
 						</div>
