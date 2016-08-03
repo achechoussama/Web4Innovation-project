@@ -47,16 +47,16 @@
 			</ul>
 
 			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form"  action="index.php?ctl=assoc_sw" method="POST">
+				<form class="cd-form" action="index?ctl=assoc_sw" method="post">
 					<p class="fieldset">
-						<label class="image-replace cd-email" for="signin-email">Log in</label>
-						<input class="full-width has-padding has-border" id="signin-email" name="login" placeholder="User Name">
+						<label class="image-replace cd-email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="text" placeholder="E-mail">
 						<span class="cd-error-message">Error message here!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text" name="pwd"  placeholder="Password">
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">Error message here!</span>
 					</p>
@@ -67,7 +67,9 @@
 					</p>
 
 					<p class="fieldset">
-						<button class="btn btn-primary col-sm-8" type="submit" name="connecting_form" value="Login">Login</button> 
+						<!--<input class="full-width" type="submit" value="Login">-->
+						<button class="btn btn-primary btn-block btn-lg" type="submit" name="button">Login</button>
+
 					</p>
 				</form>
 
@@ -76,7 +78,7 @@
 			</div> <!-- cd-login -->
 
 			<div id="cd-signup"> <!-- sign up form -->
-				<form class="cd-form">
+				<form class="cd-form" >
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">Username</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
@@ -95,14 +97,12 @@
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">Error message here!</span>
 					</p>
-
 					<p class="fieldset">
 						<input type="checkbox" id="accept-terms">
 						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
 					</p>
-
 					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Create account">
+						<button class="btn btn-primary btn-block btn-lg" type="submit" name="button">Create account</button>
 					</p>
 				</form>
 
@@ -276,7 +276,7 @@
 								<div class="single-service">
 									<i class="fa fa-users"></i>
 									<h2>Online Marketing</h2>
-									<p>Through setting powerful tools and methodologies for promoting products and services through the Internet. 
+									<p>Through setting powerful tools and methodologies for promoting products and services through the Internet.
 Our Online marketing service includes a wider range of marketing elements available on the Internet that can deliver several benefits such as:
 Growth in potential
 Reduced expenses
