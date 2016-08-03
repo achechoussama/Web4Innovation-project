@@ -47,16 +47,16 @@
 			</ul>
 
 			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form">
+				<form class="cd-form"  action="index.php?ctl=assoc_sw" method="POST">
 					<p class="fieldset">
-						<label class="image-replace cd-email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<label class="image-replace cd-email" for="signin-email">Log in</label>
+						<input class="full-width has-padding has-border" id="signin-email" name="login" placeholder="User Name">
 						<span class="cd-error-message">Error message here!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<input class="full-width has-padding has-border" id="signin-password" type="text" name="pwd"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">Error message here!</span>
 					</p>
@@ -67,7 +67,7 @@
 					</p>
 
 					<p class="fieldset">
-						<input class="full-width" type="submit" value="Login">
+						<button class="btn btn-primary col-sm-8" type="submit" name="connecting_form" value="Login">Login</button> 
 					</p>
 				</form>
 
@@ -211,7 +211,7 @@
 								<img class="pull-left media-object" src="resources/images/about-us/Tunes_logo.png" alt="about us">
 								<div class="media-body">
 									<p>
-The Association of University Tunisians in Switzerland (TUNES) is a young association, founded in May 2011, officially recognized by the Ecole Polytechnique Fédérale de Lausanne (EPFL), to non-political, non-religious and non-profit.</p>
+									The Association of University Tunisians in Switzerland (TUNES) is a young association, founded in May 2011, officially recognized by the Ecole Polytechnique Fédérale de Lausanne (EPFL), to non-political, non-religious and non-profit.</p>
 								</div>
 							</div>
 						</div>
@@ -228,15 +228,15 @@ The Association of University Tunisians in Switzerland (TUNES) is a young associ
 								<img class="pull-left media-object" src="resources/images/about-us/commity.jpg" alt="Community">
 								<div class="media-body">
 									<p>
-President : Ali Fessi<br>
-Vice President : Aymen Tiouri<br>
-General Secretary: Mehdi Trabelsi<br>
-Treasurer: Osama Zouaghia<br>
-Social pole : Kheizurane El Mekki and Sami Ben Hassen<br>
-Economic pole: Mehdi Hashish and Miriam Farhat<br>
-University Centre : BEN HASSEN Mahdi and Meriam Neffati<br>
-Communication pole: OmarBoujdaria and Omar Chabchoub
-</p>
+									President : Ali Fessi<br>
+									Vice President : Aymen Tiouri<br>
+									General Secretary: Mehdi Trabelsi<br>
+									Treasurer: Osama Zouaghia<br>
+									Social pole : Kheizurane El Mekki and Sami Ben Hassen<br>
+									Economic pole: Mehdi Hashish and Miriam Farhat<br>
+									University Centre : BEN HASSEN Mahdi and Meriam Neffati<br>
+									Communication pole: OmarBoujdaria and Omar Chabchoub
+									</p>
 								</div>
 							</div>
 						</div>
