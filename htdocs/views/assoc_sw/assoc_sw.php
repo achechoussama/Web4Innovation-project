@@ -67,7 +67,7 @@
 					<div class="col-sm-3 col-xs-12 portfolio-item html isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 						<div class="view efffect">
 							<div class="portfolio-image">
-								<img src="resources/images/portfolio/1.png" alt=""></div> 
+								<img src="resources/images/portfolio/1.jpg" alt=""></div> 
 								<div class="mask text-center">
 									<h3>Novel</h3>
 									<h4>Lorem ipsum dolor sit amet consectetur</h4>
@@ -79,7 +79,7 @@
 						<div class="col-sm-3 col-xs-12 portfolio-item jooma isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 323px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 							<div class="view efffect">
 								<div class="portfolio-image">
-									<img src="resources/images/portfolio/2.png" alt="">
+									<img src="resources/images/portfolio/2.jpg" alt="">
 								</div> 
 								<div class="mask text-center">
 									<h3>Novel</h3>
@@ -92,7 +92,7 @@
 						<div class="col-sm-3 col-xs-12 portfolio-item wordpress isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 							<div class="view efffect">
 								<div class="portfolio-image">
-									<img src="resources/images/portfolio/3.png" alt="">
+									<img src="resources/images/portfolio/3.jpg" alt="">
 								</div> 
 								<div class="mask text-center">
 								<h3>Novel</h3>
@@ -105,7 +105,7 @@
 					<div class="col-sm-3 col-xs-12 portfolio-item megento isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); opacity: 1;">
 						<div class="view efffect">
 							<div class="portfolio-image">
-								<img src="resources/images/portfolio/4.png" alt="">
+								<img src="resources/images/portfolio/4.jpg" alt="">
 							</div> 
 							<div class="mask text-center">
 								<h3>Novel</h3>
@@ -118,7 +118,7 @@
 					<div class="col-sm-3 col-xs-12 portfolio-item html isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 323px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 						<div class="view efffect">
 							<div class="portfolio-image">
-								<img src="resources/images/portfolio/5.png" alt="">
+								<img src="resources/images/portfolio/5.jpg" alt="">
 							</div> <div class="mask text-center">
 							<h3>Novel</h3>
 							<h4>Lorem ipsum dolor sit amet consectetur</h4>
@@ -130,7 +130,7 @@
 				<div class="col-sm-3 col-xs-12 portfolio-item wordpress isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 323px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 					<div class="view efffect">
 						<div class="portfolio-image">
-							<img src="resources/images/portfolio/6.png" alt="">
+							<img src="resources/images/portfolio/6.jpg" alt="">
 						</div> 
 						<div class="mask text-center">
 							<h3>Novel</h3>
@@ -143,7 +143,7 @@
 				<div class="col-sm-3 col-xs-12 portfolio-item html isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 646px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 					<div class="view efffect">
 						<div class="portfolio-image">
-							<img src="resources/images/portfolio/7.png" alt="">
+							<img src="resources/images/portfolio/7.jpg" alt="">
 						</div> 
 						<div class="mask text-center">
 							<h3>Novel</h3>
@@ -156,7 +156,7 @@
 				<div class="col-sm-3 col-xs-12 portfolio-item joomla isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 					<div class="view efffect">
 						<div class="portfolio-image">
-							<img src="resources/images/portfolio/8.png" alt=""></div> 
+							<img src="resources/images/portfolio/8.jpg" alt=""></div> 
 							<div class="mask text-center">
 								<h3>Novel</h3>
 								<h4>Lorem ipsum dolor sit amet consectetur</h4>
@@ -168,7 +168,7 @@
 					<div class="col-sm-3 col-xs-12 portfolio-item html isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 969px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 						<div class="view efffect">
 							<div class="portfolio-image">
-								<img src="resources/images/portfolio/9.png" alt="">
+								<img src="resources/images/portfolio/9.jpg" alt="">
 							</div> 
 							<div class="mask text-center">
 								<h3>Novel</h3>
@@ -181,7 +181,7 @@
 					<div class="col-sm-3 col-xs-12 portfolio-item wordpress isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 646px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 						<div class="view efffect">
 							<div class="portfolio-image">
-								<img src="resources/images/portfolio/10.png" alt=""></div> 
+								<img src="resources/images/portfolio/10.jpg" alt=""></div> 
 								<div class="mask text-center">
 									<h3>Novel</h3>
 									<h4>Lorem ipsum dolor sit amet consectetur</h4>
@@ -193,7 +193,7 @@
 						<div class="col-sm-3 col-xs-12 portfolio-item joomla isotope-item isotope-hidden" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 323px, 0px) scale3d(0.001, 0.001, 1); opacity: 0;">
 							<div class="view efffect">
 								<div class="portfolio-image">
-									<img src="resources/images/portfolio/11.png" alt=""></div> 
+									<img src="resources/images/portfolio/11.jpg" alt=""></div> 
 									<div class="mask text-center">
 										<h3>Novel</h3>
 										<h4>Lorem ipsum dolor sit amet consectetur</h4>
@@ -205,7 +205,7 @@
 							<div class="col-sm-3 col-xs-12 portfolio-item megento isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 248px, 0px) scale3d(1, 1, 1); opacity: 1;">
 								<div class="view efffect">
 									<div class="portfolio-image">
-										<img src="resources/images/portfolio/12.png" alt=""></div> 
+										<img src="resources/images/portfolio/12.jpg" alt=""></div> 
 										<div class="mask text-center">
 											<h3>Novel</h3>
 											<h4>Lorem ipsum dolor sit amet consectetur</h4>
@@ -366,7 +366,7 @@
 								<div class="row text-center">
 									<div class="col-sm-8 col-sm-offset-2">
 										<h2 class="title-one">Clients Say About Us</h2>
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+										<p>I, as a project owner, was extremely satisfied with what the MASTERs generally do.... The atmosphere of working is amazing and the results were way above expectations </p>
 									</div>
 								</div>
 								<div id="clients-carousel" class="carousel slide" data-ride="carousel"> <!-- Indicators -->
@@ -381,7 +381,7 @@
 												<div class="media">
 													<img class="pull-left" src="resources/images/clients/client1.jpg" alt="">
 													<div class="media-body">
-														<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
+														<blockquote><p> I, as a project owner, was extremely satisfied with what the MASTERs generally do.... The atmosphere of working is amazing and the results were way above expectations .</p><small></small><a href="">www.yourwebsite.com</a></blockquote>
 													</div>
 												</div>
 											</div>
@@ -391,7 +391,7 @@
 												<div class="media">
 													<img class="pull-left" src="resources/images/clients/client3.jpg" alt="">
 													<div class="media-body">
-														<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
+														<blockquote><p>I, as a project owner, was extremely satisfied with what the MASTERs generally do.... The atmosphere of working is amazing and the results were way above expectations </p><small></small><a href="">www.yourwebsite.com</a></blockquote>
 													</div>
 												</div>
 											</div>
@@ -401,7 +401,7 @@
 												<div class="media">
 													<img class="pull-left" src="resources/images/clients/client2.jpg" alt="">
 													<div class="media-body">
-														<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in Source Title</small><a href="">www.yourwebsite.com</a></blockquote>
+														<blockquote><p>I, as a project owner, was extremely satisfied with what the MASTERs generally do.... The atmosphere of working is amazing and the results were way above expectations .</p><small></small><a href="">www.yourwebsite.com</a></blockquote>
 													</div>
 												</div>
 											</div>
@@ -417,8 +417,8 @@
 								<div class="row text-center clearfix">
 									<div class="col-sm-8 col-sm-offset-2">
 										<div class="contact-heading">
-											<h2 class="title-one">Contact With Us</h2>
-											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+											<h2 class="title-one">Contact  Us</h2>
+											>
 										</div>
 									</div>
 								</div>
@@ -428,7 +428,7 @@
 									<div class="pattern"></div>
 									<div class="row text-center clearfix">
 										<div class="col-sm-6">
-											<div class="contact-address"><address><p><span>Devs</span>Cluster</p><strong>36 North Kafrul<br>Dhaka Cantonment Area<br> Dhaka-1206, Bangladesh</strong><br><small>( Lorem ipsum dolor sit amet, consectetuer adipiscing elit )</small></address>
+											<div class="contact-address"><address><p><span>M</span>asters</p><strong>POULINA, siege annexe<br>EZZAHRA, BENAROUS<br>EZZAHRA-2034, TUNISIA</strong><br><small></small></address>
 												<div class="social-icons">
 													<a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a>
 													<a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-dribbble"></i></a>
