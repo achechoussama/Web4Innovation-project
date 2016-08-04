@@ -167,7 +167,8 @@
 				<div class="item active" style="height: 879px; background-image: url(&quot;resources/images/slider/slide2.jpg&quot;);">
 					<div class="carousel-caption"> <div>
 						<h2 class="heading animated bounceInDown">DESIGNED FOR ACCOMPLISHEMENT</h2>
-						<p class="animated bounceInUp">Since amateurs hope is professionals wrok </p> <a class="btn btn-default slider-btn animated fadeIn" href="#">LOG IN</a>
+						<p class="animated bounceInUp">Since amateurs hope is professionals wrok </p> <a 
+						class="btn btn-default slider-btn animated fadeIn" href="#">LOG IN</a>
 					</div>
 				</div>
 			</div>
