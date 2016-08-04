@@ -47,10 +47,10 @@
 			</ul>
 
 			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form">
+				<form class="cd-form" action="index?ctl=assoc_sw" method="post">
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<input class="full-width has-padding has-border" id="signin-email" type="text" placeholder="E-mail">
 						<span class="cd-error-message">Error message here!</span>
 					</p>
 
@@ -67,7 +67,9 @@
 					</p>
 
 					<p class="fieldset">
-						<input class="full-width" type="submit" value="Login">
+						<!--<input class="full-width" type="submit" value="Login">-->
+						<button class="btn btn-primary btn-block btn-lg" type="submit" name="button">Login</button>
+
 					</p>
 				</form>
 
@@ -76,7 +78,7 @@
 			</div> <!-- cd-login -->
 
 			<div id="cd-signup"> <!-- sign up form -->
-				<form class="cd-form">
+				<form class="cd-form" >
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">Username</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
@@ -95,14 +97,12 @@
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">Error message here!</span>
 					</p>
-
 					<p class="fieldset">
 						<input type="checkbox" id="accept-terms">
 						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
 					</p>
-
 					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Create account">
+						<button class="btn btn-primary btn-block btn-lg" type="submit" name="button">Create account</button>
 					</p>
 				</form>
 
@@ -211,7 +211,7 @@
 								<img class="pull-left media-object" src="resources/images/about-us/Tunes_logo.png" alt="about us">
 								<div class="media-body">
 									<p>
-The Association of University Tunisians in Switzerland (TUNES) is a young association, founded in May 2011, officially recognized by the Ecole Polytechnique Fédérale de Lausanne (EPFL), to non-political, non-religious and non-profit.</p>
+									The Association of University Tunisians in Switzerland (TUNES) is a young association, founded in May 2011, officially recognized by the Ecole Polytechnique Fédérale de Lausanne (EPFL), to non-political, non-religious and non-profit.</p>
 								</div>
 							</div>
 						</div>
@@ -228,15 +228,15 @@ The Association of University Tunisians in Switzerland (TUNES) is a young associ
 								<img class="pull-left media-object" src="resources/images/about-us/commity.jpg" alt="Community">
 								<div class="media-body">
 									<p>
-President : Ali Fessi<br>
-Vice President : Aymen Tiouri<br>
-General Secretary: Mehdi Trabelsi<br>
-Treasurer: Osama Zouaghia<br>
-Social pole : Kheizurane El Mekki and Sami Ben Hassen<br>
-Economic pole: Mehdi Hashish and Miriam Farhat<br>
-University Centre : BEN HASSEN Mahdi and Meriam Neffati<br>
-Communication pole: OmarBoujdaria and Omar Chabchoub
-</p>
+									President : Ali Fessi<br>
+									Vice President : Aymen Tiouri<br>
+									General Secretary: Mehdi Trabelsi<br>
+									Treasurer: Osama Zouaghia<br>
+									Social pole : Kheizurane El Mekki and Sami Ben Hassen<br>
+									Economic pole: Mehdi Hashish and Miriam Farhat<br>
+									University Centre : BEN HASSEN Mahdi and Meriam Neffati<br>
+									Communication pole: OmarBoujdaria and Omar Chabchoub
+									</p>
 								</div>
 							</div>
 						</div>
@@ -276,7 +276,7 @@ Communication pole: OmarBoujdaria and Omar Chabchoub
 								<div class="single-service">
 									<i class="fa fa-users"></i>
 									<h2>Online Marketing</h2>
-									<p>Through setting powerful tools and methodologies for promoting products and services through the Internet. 
+									<p>Through setting powerful tools and methodologies for promoting products and services through the Internet.
 Our Online marketing service includes a wider range of marketing elements available on the Internet that can deliver several benefits such as:
 Growth in potential
 Reduced expenses

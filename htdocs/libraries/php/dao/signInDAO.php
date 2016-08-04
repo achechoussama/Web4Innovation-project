@@ -5,11 +5,12 @@ include_once('Db.class.php');
 class signIn_DAO
 {
 
-public function get_user_login($login)
+public function get_user_login($user_name)
 {
-    $sql = "SELECT * FROM `user` WHERE login = :login LIMIT 1";
+    Db::open();
+    $sql = "SELECT * FROM `t_user` WHERE user_name = :user_name LIMIT 1";
     $query = $this->db->prepare($sql);
-    $parameters = array(':login' => $login);
+    $parameters = array(':user_name' => $user_name);
     try
     {
         $query->execute($parameters);
@@ -22,12 +23,12 @@ public function get_user_login($login)
     return $query->fetch();
 }
 
-public static function verify_login_password($login,$pwd)
+public static function verify_login_password($user_name,$pwd)
 {
   Db::open();
-  $sql = "SELECT COUNT(id_user) as amount_of_users FROM user WHERE login = :login AND password = :password";
+  $sql = "SELECT COUNT(id_user) as amount_of_users FROM user WHERE user_name = :user_name AND password = :password";
   $query = $this->db->prepare($sql);
-  $parameters = array(':login' => $login, ':password' => $pwd);
+  $parameters = array(':user_name' => $user_name, ':password' => $pwd);
   $query->execute($parameters);
   Db::close();
   if($query->fetch()->amount_of_users == 1)
