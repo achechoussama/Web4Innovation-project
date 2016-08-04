@@ -4,6 +4,7 @@
 include_once('./libraries/php/Request.class.php');
 include_once('./configurations/database.php');
 include_once('./libraries/php/dao/ProjectDAO.php');
+include_once('./libraries/php/dao/signInDAO.php');
 
 $ctl = Request::getController();
 

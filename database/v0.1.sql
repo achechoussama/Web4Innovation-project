@@ -1,61 +1,173 @@
-CREATE TABLE t_user
+-- phpMyAdmin SQL Dump
+-- version 4.6.0
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Aug 01, 2016 at 01:16 PM
+-- Server version: 5.5.50-0ubuntu0.14.04.1
+-- PHP Version: 7.0.9-1+deb.sury.org~trusty+1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `web4i`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_assoc_sw`
+--
+
+CREATE TABLE `t_assoc_sw`
 (
-id 					INTEGER  		AUTO_INCREMENT  ,
-user_name           VARCHAR(50)  NOT NULL,
-pwd VARCHAR(50)					 NOT NULL,
-type VARCHAR(50)				 NOT NULL,
-PRIMARY KEY (id)
+`id_assoc_sw`       INTEGER       AUTO_INCREMENT          PRIMARY KEY ,
+`name`              VARCHAR(50)                               NOT NULL,
+`description`       VARCHAR(255),
+`logo`              VARCHAR(50),
+`website`           VARCHAR(50),
+`login_id`          INTEGER,
+FOREIGN KEY (login_id) REFERENCES t_login(id)
 );
 
-CREATE TABLE t_assoc_sw
+
+--
+-- Dumping data for table `t_assoc_sw`
+--
+
+INSERT INTO `t_assoc_sw` (`id`, `name`, `description`, `logo`, `website`) VALUES
+(1, 'nutella', 'description', 'logo', 'site.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_project`
+--
+
+CREATE TABLE `t_project`
 (
-id_assoc_sw 		INTEGER 		 AUTO_INCREMENT  ,
-name 				VARCHAR(50)      NOT NULL,
-description 		VARCHAR(255),
-logo 				VARCHAR(50),
-website 			VARCHAR(50)					 NOT NULL	,
-login_id 			INTEGER,
-PRIMARY KEY (id_assoc_sw),
-FOREIGN KEY (login_id) REFERENCES t_user(id)
+`id_project`           INTEGER           AUTO_INCREMENT           PRIMARY KEY ,
+`name`                 VARCHAR(50),
+`description`          VARCHAR(255),
+`budget`               NUMBER,
+`deadline`             DATETIME,
+`status`               VARCHAR(50),
+`document`             VARCHAR(50),
+`assoc_sw_id`          int,
+
+FOREIGN KEY (`assoc_sw_id`) REFERENCES `t_assoc_sw`(`id_assoc_sw`)
+);
+
+--
+-- Dumping data for table `t_project`
+--
+
+INSERT INTO `t_project` (`id`, `name`, `description`, `budget`, `deadline`, `status`, `document`, `assoc_sw_id`) VALUES
+(8, 'title', 'description', 50, '2015-11-24 10:24:24', 'status', 'document', 1),
+(9, 'asd', 'adfs', 50, '2015-11-24 10:24:24', 'draft', 'document', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_submission`
+--
+
+CREATE TABLE `t_submission`
+(
+`id_submission`         INTEGER     AUTO_INCREMENT      PRIMARY KEY ,
+`bid`                   NUMBER ,
+`project_id`            int ,
+`submission_date`      DATETIME,
+
+FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_login`
+--
+
+
+
+
+CREATE TABLE `t_login`
+(
+`id`                INTEGER         AUTO_INCREMENT        Primary key ,
+user_name           VARCHAR(50),
+pwd                 VARCHAR(50),
+);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_studiant`
+--
+
+
+CREATE TABLE `t_studiant`
+(
+  `id_studiant`        INTEGER        AUTO_INCREMENT            PRIMARY key ,
+  `name_studiant`      varchar(40)                                  Not NULL,
+  `surname_studiant`   varchar(40)                                  NOT NULL,
+  `email`              varchar(40)                                  NOT NULL,
+  `school`              varchar(40)                                  NOT NULL       check in ("ENSI","ESPRIT","ENISO")
+ );
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_task`
+--
+
+
+CREATE TABLE `t_task`
+(
+  `id_task`        INTEGER        AUTO_INCREMENT            PRIMARY key ,
+  `name_task`      varchar(40)                                  Not NULL,
+  `description`   varchar(40)                                  NOT NULL,
+  `start_date`            DATETIME                                  NOT NULL,
+  `end_date`              DATETIME                                  NOT NULL       check in ("ENSI","ESPRIT","ENISO")
+ `comments`			 VARCHAR(255),
+ `hour_number`		NUMBER							NOT NULL,
+ `project_id`		NUMBER				,
+ FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`)
+
+ );
+
+- --------------------------------------------------------
+
+--
+-- Table structure for table `t_team`
+--
+ 
+
+
+
+
+
+- --------------------------------------------------------
+
+--
+-- Table structure for table `t_task`
+--
+
+CREATE TABLE `affectation`
+(
+ `affectation_id`	NUMBER 		AUTO_INCREMENT		PRIMARY KEY,
+ `studiant_id`		NUMBER,
+ `project_id`       NUMBER,
+ FOREIGN KEY (`project_id`) REFERENCES `t_project`(`id_project`),
+ FOREIGN KEY (`studiant_id`) REFERENCES `t_studiant`(`id_studiant`),
+
 );
 
 
-CREATE TABLE t_project
-(
-id_project 			INTEGER  AUTO_INCREMENT  ,
-name 				VARCHAR(50)					NOT NULL,
-description 		VARCHAR(255),
-budget 				double,
-deadline 			DATETIME,
-status 				VARCHAR(50)                 NOT NULL  ,
-document 			VARCHAR(50),
-assoc_sw_id 		integer,
-PRIMARY KEY (id_project),
-FOREIGN KEY (assoc_sw_id) REFERENCES t_assoc_sw(id_assoc_sw),
-CONSTRAINT	status CHECK  (status in ('done','in_progress','pending'))
-);
-
-CREATE TABLE t_submission
-(
-id_submission 		INTEGER  					AUTO_INCREMENT  ,
-bid 				double						NOT NULL		,
-project_id		 	int ,
-submission_date 	DATETIME   					NOT NULL,
-PRIMARY KEY (id_submission),
-FOREIGN KEY (project_id) REFERENCES t_project(id_project)
-);
-
-CREATE TABLE t_student
-(
-id_student 			INTEGER  						AUTO_INCREMENT  ,
-name 				VARCHAR(150)					NOT NULL,
-email 				VARCHAR(50)						NOT NULL,
-school 				VARCHAR(50)						NOT NULL ,
-cv 					VARCHAR(50)						NOT NULL,
-rating 				double							NOT NULL,
-login_id            INTEGER,
-PRIMARY KEY (id_student),
-CONSTRAINT FOREIGN KEY (login_id) REFERENCES t_user(id),
-CONSTRAINT school  CHECK (school in('ensi','esprit','eniso'))
-
-);

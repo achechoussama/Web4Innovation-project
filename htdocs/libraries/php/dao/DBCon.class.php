@@ -30,6 +30,7 @@ class DbCon
 		if(!self::$dbh){
 
 			new DbCon();
+			//var_dump(self::$dbh);
 
 		}
 

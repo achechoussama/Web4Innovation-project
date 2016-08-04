@@ -5,35 +5,22 @@ include_once('Db.class.php');
 class signIn_DAO
 {
 
-public function get_user_login($user_name)
+public static function get_user_id_by_login($user_name)
 {
     Db::open();
-    $sql = "SELECT * FROM `t_user` WHERE user_name = :user_name LIMIT 1";
-    $query = $this->db->prepare($sql);
-    $parameters = array(':user_name' => $user_name);
-    try
-    {
-        $query->execute($parameters);
-    } 
-    catch (PDOException $e) 
-    {
-        return NULL;
-    }
-
-    return $query->fetch();
+    $sql = "SELECT * FROM `t_user` WHERE user_name = '$user_name' ";
+    return Db::getRowList($sql) ;
 }
 
 public static function verify_login_password($user_name,$pwd)
 {
   Db::open();
-  $sql = "SELECT COUNT(id_user) as amount_of_users FROM user WHERE user_name = :user_name AND password = :password";
-  $query = $this->db->prepare($sql);
-  $parameters = array(':user_name' => $user_name, ':password' => $pwd);
-  $query->execute($parameters);
-  Db::close();
-  if($query->fetch()->amount_of_users == 1)
-        return true;
-   return false;
+  $sql = "SELECT * FROM t_user WHERE user_name = '$user_name' AND pwd = '$pwd' ";
+  $rslt =Db::getRowList($sql) ;
+  if (empty($rslt)) {
+    return false;
+  }
+   return true;
 }
 
 public static function getProjects(){
@@ -42,6 +29,28 @@ public static function getProjects(){
   $result = Db::getRowList($sql);
   Db::close();
 return $result;
+}
+
+
+public static function get_user_by_login($login)
+{
+    Db::open();
+    $sql = "SELECT * FROM `t_user` WHERE user_name = '$login'";
+    $result = Db::getRowList($sql);
+    Db::close();
+    return $result;
+}
+
+public static function get_assoc_sw_by_login($login)
+{
+  $assoc = self::get_user_id_by_login($login) ;
+  Db::open();
+  $idd=$assoc[0]->id;
+    $sql = "SELECT * FROM `t_assoc_sw` WHERE login_id = '$idd'";
+    $result = Db::getRowList($sql);
+    Db::close();
+    return $result;
+
 }
 
 public static function geDoneProjects(){
@@ -105,7 +114,7 @@ public static function updateDocument($oldDocument = 0, $newDocument = 0){
   $sql ="UPDATE `t_project` SET `document`='$newDocument' WHERE `document`= '$oldDocument' ;";
   Db::updateQuery($sql);
   Db::close();
-} 
+}
 
 }
 

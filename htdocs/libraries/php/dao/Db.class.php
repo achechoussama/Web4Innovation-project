@@ -39,7 +39,6 @@ Class Db {
 		$list  = array();
 
 		$statement = self::$dbh->query($sql);
-
 		$statement->setFetchMode(PDO::FETCH_OBJ);
 
 		if(isset($statement))

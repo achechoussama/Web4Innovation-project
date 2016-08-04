@@ -28,13 +28,17 @@
 </head><!--/head-->
 <body>
 	<header role="banner">
-		<div id="cd-logo"><a href="#0"><img src="./resources/img/cd-logo.svg" alt="Logo"></a></div>
+		<!--<div id="cd-logo"><a href="#0"><img src="./resources/images/logo.png" alt="Logo" style="width:100px;height:80px;"></a></div>-->
 
 		<nav class="main-nav">
 			<ul>
 				<!-- inser more links here -->
-				<li><a class="cd-signin" href="#0">Sign in</a></li>
-				<li><a class="cd-signup" href="#0">Sign up</a></li>
+				<li class="page-scroll"><a  href="#about-us" >About us</a></li>
+				<li class="page-scroll"><a  href="#services">Services</a></li>
+				<li class="page-scroll"><a  href="#contact">Contact</a></li>
+				<li class="page-scroll"><a class="cd-signin" href="#0">Sign in</a></li>
+				<li class="page-scroll"><a class="cd-signup" href="#0">Sign up</a></li>
+
 			</ul>
 		</nav>
 	</header>
@@ -47,16 +51,16 @@
 			</ul>
 
 			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form" action="index?ctl=assoc_sw" method="post">
+				<form class="cd-form" action="index?ctl=sign_in" method="post">
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="text" placeholder="E-mail">
+						<input class="full-width has-padding has-border" id="signin-email" type="text" placeholder="E-mail" name="login">
 						<span class="cd-error-message">Error message here!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password" name="pwd">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">Error message here!</span>
 					</p>
@@ -160,14 +164,15 @@
 						<div>
 							<h2 class="heading animated bounceInDown">SUCCESS IS IN THE DETAILS</h2>
 							<p class="animated bounceInUp">And you are engineered for success</p>
-							<a class="btn btn-default slider-btn animated fadeIn" href="#">log in</a>
+							<a class="btn btn-default slider-btn animated fadeIn" href="#0">log in</a>
 						</div>
 					</div>
 				</div>
 				<div class="item active" style="height: 879px; background-image: url(&quot;resources/images/slider/slide2.jpg&quot;);">
 					<div class="carousel-caption"> <div>
 						<h2 class="heading animated bounceInDown">DESIGNED FOR ACCOMPLISHEMENT</h2>
-						<p class="animated bounceInUp">Since amateurs hope is professionals wrok </p> <a class="btn btn-default slider-btn animated fadeIn" href="#">LOG IN</a>
+						<p class="animated bounceInUp">Since amateurs hope is professionals wrok </p> <a
+						class="btn btn-default slider-btn animated fadeIn" href="#">LOG IN</a>
 					</div>
 				</div>
 			</div>
@@ -192,11 +197,11 @@
 	<div class="container">
 		<div class="text-center">
 			<div class="col-sm-8 col-sm-offset-2">
-				<h2 class="title-one">ABOUT US </h2>
+				<h2 class="title-one ">ABOUT US </h2>
 				<p>Masters is a group of Tunisian IT engineering students reunited from several states in order to enjoy coding web development </p>
 			</div>
 		</div>
-		<div class="about-us">
+		<div class="about-us" >
 			<div class="row">
 				<div class="col-sm-8 col-md-offset-2">
 					<h3>Our Mentor: TUNES</h3>
@@ -261,29 +266,25 @@
 							<div class="col-sm-4">
 								<div class="single-service">
 									<i class="fa fa-th"></i>
-									<h2>Modern Design</h2>
+									<h2 style="margin-top:12px;">Modern Design</h2>
 									<p>Design matters, it is one of the most important basics to ensure PERFECTION. As MASTERS we gather a group of multi skilled, talented designers who use the latest and most efficient technologies to make your IDEA... a FACT.</p>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="single-service">
 									<i class="fa fa-html5"></i>
-									<h2>Web Development</h2>
+									<h2 style="margin-top:12px;">Web Development</h2>
 									<p>Enabling website's functionality is what web development is. Through the "daily birth" of New technologies we keep improving our services better and better and We count on our developers to realize your web project as good as never. </p>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="single-service">
 									<i class="fa fa-users"></i>
-									<h2>Online Marketing</h2>
+									<h2 style="margin-top:12px;">Online Marketing</h2>
 									<p>Through setting powerful tools and methodologies for promoting products and services through the Internet.
 Our Online marketing service includes a wider range of marketing elements available on the Internet that can deliver several benefits such as:
 Growth in potential
-Reduced expenses
-Elegant communications
-Better control
-Improved customer service
-Competitive advantage.</p>
+Reduced expenses.</p>
 								</div>
 							</div></div>
 						</div>
@@ -343,7 +344,7 @@ Competitive advantage.</p>
 	<footer id="footer">
 		<div class="container">
 			<div class="text-center">
-				<p>Copyright © 2016 - <a href="http://mostafiz.me/">Mostafiz</a> | All Rights Reserved</p>
+				<p>Copyright © 2016 - <a href="#">Team Masters@</a> | All Rights Reserved</p>
 			</div>
 		</div>
 	</footer> <!--/#footer-->
